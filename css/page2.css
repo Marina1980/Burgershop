@@ -1,8 +1,13 @@
 .best{      
-    background: url("../img2/bg.jpg");   
+    background: url("../img2/bg.jpg"); 
+    background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;  
 }
 .container{
-    padding-top: 100px;
+    /* padding-top: 100px; */
   
     display: flex;
    flex-direction: column;

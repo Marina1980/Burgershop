@@ -3,20 +3,43 @@ html, body {
     height: 100%;
 }
 .intro{      
-    background: url("../img1/video-bg1.png");   
+    background: url("../img1/video-bg.jpg"); 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .section{
 height: 100vh;
+/* min-height: 650px; */
 background-size: cover;
 background-repeat: no-repeat;  
 }
-.intro__menu{
-    padding-left:80px;
-    padding-top:10px;
-    display: flex;
+.button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
-.intro__logotype{
-    margin-right: 70px;
+.header{
+    /* padding-left:80px; */
+    padding-top:20px;
+    display: flex;
+    align-items: center;
+    height:60px;
+}
+.intro__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro__logotype{    
+    margin-right: 100px;
 }
 .intro__list{
     display: flex;
@@ -43,14 +66,18 @@ background-repeat: no-repeat;
     }
 
 .intro__contact{
-    padding-top:30px;  
+    /* padding-top:30px;   */
 } 
 .intro__link{
     color:  #ffffff;
     text-decoration: none;   
 }   
-.order{
-   background-color: #e45028;
+.button__orange{
+    /* margin-bottom:15px; */
+    background-color: #e45028;
+    color:#ffffff;
+    margin-left: 15px; 
+   /* background-color: #e45028;
    color:#ffffff;
    border:none;
    border-radius:5px;
@@ -59,36 +86,37 @@ background-repeat: no-repeat;
     margin-top:20px;
     margin-left: 15px;   
     width:95px;
-    height: 35px;
+    height: 35px; */
 }
 .intro__natural-burger{
+    margin-right:30px;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
 }
 .intro__burger{
-    display:flex; 
+    /* display:flex; 
     flex-direction:column;
-    align-items: center;
-    margin-top:60px;
-    margin-left: 70px;
-    width: 450px;
-   height: 241px;
-   background-image: url('../img1/drops.png');
-   
+    align-items: center; */
+    /* margin-top:60px;
+    margin-left: 70px; */
+    /* width: 451px;
+   height: 424px; */
+   /* background-image: url('../img1/drops.png'); */
    
 }
 .intro__steam{
-    margin-top: -40px;
-    margin-left: 20px;
-    width: 340px;
-    height: 323px;
+    
+     width: 360px; 
+    height: 343px;
+    margin-right: 20px; 
 }
+
 .intro__content{
     display:flex; 
     flex-direction:column;
     align-items: center; 
-    margin-right: 200px;
-    margin-top:135px; 
+    
 }
 .title{
     font-family: "Gagalin";
