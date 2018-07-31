@@ -1,0 +1,30 @@
+.section-team {
+  position: relative;
+  background: url("../img4/bg.jpg"); }
+
+.team__background {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.team__item {
+  color: #ffffff;
+  font-family: 'Gagalin';
+  font-size: 14px;
+  margin-top: 40px;
+  margin-left: 15px;
+  position: relative; }
+
+.team__icon-down::before {
+  content: '';
+  /* display: block; */
+  width: 6px;
+  height: 6px;
+  background: url("../img4/Polygon_down.png");
+  background-repeat: no-repeat;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=page4.css.map */

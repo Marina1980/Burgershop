@@ -1,0 +1,41 @@
+
+.section-team{
+    position: relative;    
+    background: url("../img4/bg.jpg"); 
+   }
+.team__background {
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+right: 0;     
+background-color: rgba(0,0,0, 0.9);
+}
+.team__block{
+    display:flex;
+//    flex-direction: column;
+justify-content: center;
+}
+.team__link{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.team__item{
+    color:  #ffffff;
+    font-family:'Gagalin';
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 15px;
+    // position: relative; 
+}
+
+.team__link::before {
+    display: flex;
+    content: " ";
+    border:6px solid transparent;
+    border-top: 6px solid  #f9b43b;
+    position: absolute;
+    left: -17px;
+    top: -1px; 
+}

@@ -14,7 +14,7 @@
    align-items: center;
   
 }
-.title__color{
+.title_color{
     color:#2f3234;
     margin-bottom: 50px;
 }
@@ -25,12 +25,19 @@
 }
 .best__item{
     display:flex;
-    width:310px;
+    /* width:310px; */
     flex-direction: column;
     align-items: center;
+    flex: 1;
+    /* padding:0 20px; */
 }
 .best__img{
     margin-bottom: 40px;
+}
+.best__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .best__title{
     color:#2f3234;
