@@ -62,24 +62,29 @@ background-repeat: no-repeat;
     width: 50%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .vk-icon{
-    fill:#e45028;
+    fill:#595959;
     width:25px;
     height: 15px;
+    margin-left: 20px;
 }
 .fb-icon{
-    fill:#e45028;
+    fill:#595959;
     width:20px;
     height: 20px;
+    margin-left: 20px;
 }
 .inst-icon{
-    fill:#e45028;
+    fill:#595959;
     width:20px;
     height: 20px;
+    margin-left: 20px;
 }
 .twitter-icon{
-    fill:#e45028;
+    fill:#595959;
     width:17px;
     height: 20px;
+    margin-left: 20px;
 }
