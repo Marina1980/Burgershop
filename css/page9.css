@@ -12,24 +12,25 @@ background-repeat: no-repeat;
 }
 .footer{
     display: flex;
-    height: 60px;
+    /* height: 60px; */
     width:100%;
     background: url("../img9/footer.jpg");
     
 }
-.container{
-    margin:10px 80px;
+.contain{   
     display: flex;
     justify-content: space-between;
+    margin:10px 80px;
+}
+.footer__left_contact{
+    display: flex;
+    color: #fff;
+    margin-bottom:5px;
 }
 .footer__list{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-.footer__left_contact{
-    color: #fff;
-    margin-bottom:5px;
 }
 .footer_phone::before{
     content: '';
@@ -44,6 +45,7 @@ background-repeat: no-repeat;
     align-items: center;
    color:#e45028;
 }
-/* .footer__right{
-    background: url('../icons/vk.svg');
-} */
+.footer__right{
+  display: flex;
+  justify-content: flex-end;
+}
