@@ -25,23 +25,26 @@ background-repeat: no-repeat;
     justify-content: space-between;
     
 }
-.footer__left_contact{
-    display: flex;
-    color: #fff;
-    margin-bottom:5px;
+.footer__left{
+    width: 50%;
 }
 .footer__list{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.footer__left{
+.footer__left_contact{
+    display: flex;
+    color: #fff;
+    margin-bottom:5px;
+}
+
+/* .footer__left{
     width: 50%;
 }
 .footer__left_contact{
     color: #fff;
-
-}
+} */
 .footer_phone::before{
     content: '';
      display: block; 
@@ -59,4 +62,24 @@ background-repeat: no-repeat;
     width: 50%;
   display: flex;
   justify-content: flex-end;
+}
+.vk-icon{
+    fill:#e45028;
+    width:25px;
+    height: 15px;
+}
+.fb-icon{
+    fill:#e45028;
+    width:20px;
+    height: 20px;
+}
+.inst-icon{
+    fill:#e45028;
+    width:20px;
+    height: 20px;
+}
+.twitter-icon{
+    fill:#e45028;
+    width:17px;
+    height: 20px;
 }
