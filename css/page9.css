@@ -23,19 +23,28 @@ background-repeat: no-repeat;
     margin:10px 80px;
     display: flex;
     justify-content: space-between;
+    
+}
+.footer__left_contact{
+    display: flex;
+    color: #fff;
+    margin-bottom:5px;
 }
 .footer__list{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+<<<<<<< HEAD
 .footer__left{
     width: 50%;
 }
 .footer__left_contact{
     color: #fff;
-    margin-bottom:5px;
+
 }
+=======
+>>>>>>> 3894384992b22b7d536aca44cafb3e53081ce308
 .footer_phone::before{
     content: '';
      display: block; 
@@ -49,6 +58,7 @@ background-repeat: no-repeat;
     align-items: center;
    color:#e45028;
 }
-/* .footer__right{
-    background: url('../icons/vk.svg');
-} */
+.footer__right{
+  display: flex;
+  justify-content: flex-end;
+}
