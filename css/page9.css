@@ -64,6 +64,9 @@ background-repeat: no-repeat;
   justify-content: flex-end;
   align-items: center;
 }
+.social__list{
+    display: flex;
+}
 .vk-icon{
     fill:#595959;
     width:25px;
@@ -88,6 +91,15 @@ background-repeat: no-repeat;
     height: 20px;
     margin-left: 20px;
 }
-.social__link:hover{
+.vk-icon:hover{
+    fill:#fff;   
+}
+.fb-icon:hover{
+    fill:#fff;   
+}
+.inst-icon:hover{
+    fill:#fff;   
+}
+.twitter-icon:hover{
     fill:#fff;   
 }
