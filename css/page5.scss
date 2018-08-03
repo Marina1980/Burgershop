@@ -1,7 +1,60 @@
 
-.section_menu{
+.menus{
     background: url("../img5/photo-bg.jpg");
- position: relative;  
+    display: flex;
+    justify-content: flex-end;
+  &__list, &__item, &__trigger, &__content{
+      height: 100%;
+  }
+  &__list{
+      display: flex;
+  }
+  &__item{
+      display: flex;
+      box-sizing: border-box;
+        &_active{
+        .menus__content_wrap{
+        width: 480px;
+       }
+       .menus__title{
+           color:orange;
+       }
+
+      }
+  }
+  
+  &__trigger{
+      
+      display: flex;
+      width: 80px;
+      text-decoration: none;
+      align-items: flex-end;
+      padding-bottom: 65px;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+  } 
+  &__title{
+    white-space: nowrap;
+      height: 80px;
+      width: 100%;
+      transform:rotate(-90deg);
+      margin-left: 20px;
+    //   padding-bottom: 20px; 
+      font-size: 30px;
+      font-family: "Gagalin";
+      color: #fff;
+      
+  }
+  &__content_wrap{
+      width:0;
+    overflow: hidden;
+    transition: 1s;
+  }
+  &__content{
+    padding: 40px;
+      width: 100%;     
+      background-color: rgba(#000, .5);
+  }
 }
 .title_color1{
     color: #fff;
@@ -9,47 +62,47 @@
 .title_padding{
     padding: 112px 95px;
 }
-.menu__list{
-    display: flex;
-    height: 100%;
-}
-.menu__item{
-    display: flex;
-    height: 100%;
-}
-.menu_img1{
-    display: flex;
-    top: 0;
-    left:840px;
-    width: 80px;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
+// .menu__list{
+//     display: flex;
+//     height: 100%;
+// }
+// .menu__item{
+//     display: flex;
+//     height: 100%;
+// }
+// .menu_img1{
+//     display: flex;
+//     top: 0;
+//     left:840px;
+//     width: 80px;
+//     height: 100%;
+//     background-size: cover;
+//     position: absolute;
     
-}
-.menu_img2{
-    display: flex;
-    top: 0;
-    left:920px;
-    width: 80px;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-}
-.menu_img3{
-    display: flex;
-    top: 0;
-    left:1000px;
-    width: 80px;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-}
-.menu__link{
+// }
+// .menu_img2{
+//     display: flex;
+//     top: 0;
+//     left:920px;
+//     width: 80px;
+//     height: 100%;
+//     background-size: cover;
+//     position: absolute;
+// }
+// .menu_img3{
+//     display: flex;
+//     top: 0;
+//     left:1000px;
+//     width: 80px;
+//     height: 100%;
+//     background-size: cover;
+//     position: absolute;
+// }
+// .menu__link{
 
-}
-.menu__desc{
-    display: flex;
-    justify-content: flex-end;
-transform: rotate(-90deg);
-}
+// }
+// .menu__desc{
+//     display: flex;
+//     justify-content: flex-end;
+// transform: rotate(-90deg);
+// }
