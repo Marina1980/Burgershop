@@ -88,3 +88,6 @@ background-repeat: no-repeat;
     height: 20px;
     margin-left: 20px;
 }
+.social__link:hover{
+    fill:#fff;   
+}
