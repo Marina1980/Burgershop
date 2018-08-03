@@ -66,9 +66,10 @@ background-repeat: no-repeat;
 }
 .social__list{
     display: flex;
+    align-items: center;
 }
 .vk-icon{
-    fill:#e45028;
+    fill:#595959;
     width:25px;
     height: 15px;
     margin-left: 20px;
