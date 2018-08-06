@@ -41,9 +41,29 @@ body{
 }
 body, html {
     height:100%;
+    }
+html{
+    font-size: 16px;
+    @include tablets{
+        font-size:15px;
+    }
+    @include phones{
+        font-size: 14px;
+    }
+}    
+.container{
+    margin:0 auto;
+    position: relative;
+    width:95%;
+   max-width: 960px;
+    display:flex;
+    flex-direction: column;
 }
 .wrapper{
     overflow: hidden;
     position:relative;
+    width: 100%;
+    // max-width: 940px;
+    min-height: 100%;
 }
 

@@ -10,8 +10,9 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="maincontent">
+        <div class="maincontent">            
             <section class="intro section">
+                <div class="container">
                 <header class="header">
                     <div class="intro__logotype"><img class="intro__logo" src="./img1/logo.png" alt="logo"></div>
                     <nav class="intro__menu">
@@ -24,8 +25,17 @@
                             <li class="intro__item"><a class="intro__link" href="#">КАК МЫ РАБОТАЕМ</a></li>
                             <li class="intro__item"><a class="intro__link" href="#">КОНТАКТЫ</a></li>
                         </ul>
-                    </nav>    
-                    <button class="button button_orange button_margin"><a class="intro__link" href="#">ЗАКАЗАТЬ</a></button>                                    
+                    </nav> 
+                    <div class="order__menu">  
+                        <button class="button button_orange button_margin"><a class="intro__link" href="#">ЗАКАЗАТЬ</a></button>                                    
+                        <div class="menu__btn">
+                            <button type="button" class="btn-menu">
+                                <span class="btn-menu__line"></span>
+                                <span class="btn-menu__line"></span>
+                                <span class="btn-menu__line"></span>
+                            </button>
+                        </div>
+                    </div>  
                 </header>
                 <div class="intro__natural-burger"> 
                     <div class="intro__burger">
@@ -38,9 +48,10 @@
                                   
                 </div>
                 <div class="intro__scroll"><a class="scroll" href="#"><img class="intro__scroll_arrow" src='./img1/arrow-scroll.png' alt="scroll"></a></div>
+                </div>
             </section>
             <section class="best section">
-                <div class="container">
+                <div class="best__container">
                     <h2 class="title title_color">МЫ ЛУЧШИЕ</h2>
                     <ul class="best__list">
                         <li class="best__item">
@@ -277,7 +288,18 @@
                                 </div>                       
                                     
                             </div>
-                            <div class="squared__button">Не презванивать</div> 
+                            <div class="form__content-checkbox">
+                                <label class="form__label-checkbox">                                   
+                                    <input class="form__input-checkbox" type="checkbox" name="check" value="не перезванивать" checked>
+                                    <span class="form__input-fake-checkbox"></span>
+                                    <span class="form__label-name-checkbox">Не перезванивать</span>
+                                </label>
+                            </div> 
+                            <div class="form__buttons">
+                                <button class="button button_orange  button-size">Заказать</button>
+                                <a href="#" class="clear">Очистить</a>
+                            </div>  
+                            <!-- <div class="squared__button">Не презванивать</div>  -->
                         </div>
                         
                     </div>

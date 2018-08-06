@@ -11,23 +11,39 @@ position: absolute;
 top: 0;
 right: 0;     
 background-color: rgba(44,47,49, 0.9);
-}
+@include tablets {
 
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}  
+}
 
 .team__block{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
-justify-content: space-between;
+justify-content: center;
+@include tablets {
+    align-items: center;
+} 
 }
 .title_margin{
-    margin-left: 100px;    
+    margin-left: 100px;
+    @include tablets {
+        margin-left: 0;
+       }    
 }
 .team__list{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     padding-left: 100px;
+    @include tablets {
+        align-items: center;
+      
+    }
 }
 .team__item{
     color:  #ffffff;
@@ -38,6 +54,9 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @include tablets {
+        align-items: center;
+    }
     // position: relative; 
 }
 .team__link{
@@ -72,16 +91,24 @@ justify-content: space-between;
 }
 .team__manager{
     display: flex;
+    @include tablets {
+       flex-direction: column;
+       align-items: center;
+    }
 }
 .team__manager_content{
     display: flex;
     flex-direction: column;
     // justify-content: flex-start;
    align-items: flex-start;
+   @include tablets {
+    align-items: center;
+}
 }
 .team__manager_job{
 margin-top: 10px;
 margin-bottom:10px;
+
 }
 .team__manager_content{
     font-family: 'Ubuntu';
