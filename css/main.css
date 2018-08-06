@@ -322,7 +322,6 @@ height: 343px; */
   @media screen and (max-width: 768px) {
     .team__background {
       left: 0;
-      right: 0;
       width: 100%;
       text-align: center; } }
 
