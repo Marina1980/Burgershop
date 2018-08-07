@@ -10,10 +10,20 @@
 .order__title{
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
+    @include phones {
+        flex-wrap: wrap;
+       align-items: center;
+       }
+}
+.title__align{
+    @include phones {
+        text-align: center;
+       align-items: center;
+       }   
 }
 .form{
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
     display: flex;
      justify-content: space-between;
@@ -35,14 +45,14 @@
        }
 }
 .form__row{
-    margin-left:15px;
-    margin-right:50px; 
-    margin-bottom: 15px;
+    margin-left:rem(15px);
+    margin-right: rem(50px); 
+    margin-bottom: rem(15px);
     display: flex;
 }
 .form__block{
     flex: 1;
-    margin-left: 60px;
+    margin-left: rem(60px);
 
     &:first-child{
     margin-left: 0;
@@ -50,10 +60,10 @@
 
 }
 .form__input{
-    padding: 5px 20px;
+    padding: rem(5px) rem(20px);
     border:none;
     background: #fff;
-    border-radius: 5px;
+    border-radius: rem(5px);
     width: 100%;
 }
 .form__right{
@@ -66,19 +76,20 @@
   
 }
 .form__textarea{
-    margin-right: 35px;
+    margin-right: rem(35px);
    
     // height: 200px;
     // width: 50%;
 }
 .form__textarea-text{
-    margin-left:10px;
+    margin-left: rem(10px);
+    
 }
 .form__textarea-message{
-    margin-left:10px;
-    margin-bottom: 10px;    
-    border-radius: 5px;
-    height: 80px;
+    margin-left: rem(10px);
+    margin-bottom: rem(10px);    
+    border-radius: rem(5px);
+    height: rem(80px);
     width: 100%;
     resize:none; 
 }
@@ -96,8 +107,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
+    width: rem(15px);
+    height: rem(15px);
     border-radius: 50%;
     background: #fff;
     // border:2px solid #656464;
@@ -105,8 +116,8 @@
 .form__input-fake::before{
     content:"";
      display:block; 
-    width: 0px;
-    height: 0px;
+    width: rem(0px);
+    height: rem(0px);
     border-radius: 50%;
     /* border:2px solid #f89513; */
     background-color: #f89513;
@@ -114,29 +125,29 @@
     transition: .5s;
 }
 .form__input-radio:checked+ .form__input-fake::before{
-    width: 5px;
-    height: 5px;
+    width: rem(5px);
+    height: rem(5px);
 }
 .form__wrap{
     display: flex;
 }
 .form__label{
     display: flex;
-    // margin: 10px;
-    margin-left:10px;
+    // margin: rem(10px;
+    margin-left:rem(10px);
     align-items: center;
     position:relative;
 }
 .form__input-radio{
     position:absolute;
     /* text-outline: 0; */
-    left: -9999px;
+    left: rem(-9999px);
 }
 .form__input:checked+ .form__input-fake + .form__label-name{
     color:#f89513;
 }
 .form__label-name{
-    margin-left: 5px;
+    margin-left: rem(5px);
 }
 // .squared__button:before{
 //     content:"";
@@ -161,8 +172,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
+    width: rem(15px);
+    height: rem(15px);
     background: #fff;
     
        // border:2px solid #656464;
@@ -170,8 +181,8 @@
 .form__input-fake-checkbox::before{
     content:"";
      display:block; 
-    width: 0px;
-    height: 0px;
+    width: rem(0px);
+    height: rem(0px);
     /* border:2px solid #f89513; */
     background-color: #f89513;
     position:absolute;
@@ -184,8 +195,8 @@
 
 .form__label-checkbox{
     display: flex;
-    margin: 10px;
-    margin-left:10px;
+    margin: rem(10px);
+    margin-left: rem(10px);
     align-items: center;
     position:relative;
     
@@ -193,13 +204,13 @@
 .form__input-checkbox{
     position:absolute;
     /* text-outline: 0; */
-    left: -9999px;
+    left: rem(-9999px);
 }
 .form__input-checkbox:checked+ .form__input-fake-checkbox + .form__label-name-checkbox{
     color:#fff;
 }
 .form__label-name-checkbox{
-    margin-left: 5px;   
+    margin-left: rem(5px);   
 }
 .form__buttons{
     display: flex;
@@ -207,10 +218,10 @@
 }
 .button-size{
     // width: 20%;
-    margin-left: 10px;    
+    margin-left: rem(10px);    
 }
 .clear{
-    margin-left: 20px;
+    margin-left: rem(20px);
     text-decoration: none;
     color: #fff;
 }

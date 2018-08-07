@@ -16,12 +16,15 @@
 }
 .title_color{
     color:#2f3234;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
 }
 .best__list{
     display:flex;
     width:920px;
     justify-content:space-between;
+    @include phones {
+    flex-direction: column;
+    }  
 }
 .best__item{
     display:flex;
@@ -29,27 +32,35 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
-     padding:0 10px; 
+     padding:0 rem(10px); 
+     @include phones {
+        flex-direction: initial;
+        }  
 }
 .best__icon{
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }
 .best__content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    // @include phones {
+    //    text-align: center;
+    //     }  
 }
 .best__title{
     color:#2f3234;
     font-family: 'lifehack';
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: rem(24px);
+    margin-bottom: rem(10px);
 }
 .best__desc{
      color:#2f3234;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
     text-align: center;
+    max-width: rem(450px);
+    
 }

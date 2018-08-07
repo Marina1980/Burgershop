@@ -13,7 +13,7 @@
       display: flex;
     &_active{
         .menus__content_wrap{
-        width: 480px;
+        width: rem(480px);
         }
             .menus__title{
            color:orange;
@@ -25,22 +25,22 @@
   &__trigger{
     box-sizing: border-box;
       display: flex;
-      width: 80px;
+      width: rem(80px);
       text-decoration: none;
       align-items: flex-end;
-      margin-bottom: 30px;
-      padding-bottom: 65px;
+      margin-bottom: rem(30px);
+      padding-bottom: rem(65px);
       background-repeat: no-repeat;
       background-size: cover;
   } 
   &__title{
     white-space: nowrap;
-      height: 80px;
+      height: rem(80px);
       width: 100%;
       transform:rotate(-90deg);
-      margin-left: 20px;
-    //   padding-bottom: 10px; 
-      font-size: 30px;
+      margin-left: rem(20px);
+    //   padding-bottom: rem(10px); 
+      font-size: rem(30px);
       font-family: "Gagalin";
       color: #fff;
       
@@ -51,7 +51,7 @@
     transition: 1s;
   }
   &__content{
-    padding: 40px;
+    padding: rem(40px);
       width: 100%;     
       background-color: rgba(#000, .5);
   }
@@ -60,7 +60,7 @@
     color: #fff;
 }
 .title_padding{
-    padding: 112px 600px;
+    padding: rem(112px) rem(600px);
 }
 // .menu__list{
 //     display: flex;

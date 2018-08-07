@@ -1,7 +1,7 @@
 
 
 .section__map{
-    height:650px;
+    height:rem(650px);
     background-size: cover;
 background-repeat: no-repeat; 
 
@@ -21,9 +21,13 @@ background-repeat: no-repeat;
 }
 .contain{
     width: 100%;
-    margin:10px 80px;
+    margin:rem(10px) rem(80px);
     display: flex;
     justify-content: space-between;
+    @include phones{
+        align-items: center;
+        flex-direction: column;
+    }
     
 }
 .footer__left{
@@ -37,7 +41,7 @@ background-repeat: no-repeat;
 .footer__left_contact{
     display: flex;
     color: #fff;
-    margin-bottom:5px;
+    margin-bottom:rem(5px);
 }
 
 /* .footer__left{
@@ -49,10 +53,10 @@ background-repeat: no-repeat;
 .footer_phone::before{
     content: '';
      display: block; 
-     width: 12px;
-    height: 11px; 
+     width: rem(12px);
+    height: rem(11px); 
      background: url('../img9/phone.png');
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 .footer_phone{
     display: flex;
@@ -71,27 +75,27 @@ background-repeat: no-repeat;
 }
 .vk-icon{
     fill:#595959;
-    width:25px;
-    height: 15px;
-    margin-left: 20px;
+    width:rem(25px);
+    height: rem(15px);
+    margin-left:rem(20px);
 }
 .fb-icon{
     fill:#595959;
-    width:20px;
-    height: 20px;
-    margin-left: 20px;
+    width:rem(20px);
+    height: rem(20px);
+    margin-left: rem(20px);
 }
 .inst-icon{
     fill:#595959;
-    width:20px;
-    height: 20px;
-    margin-left: 20px;
+    width:rem(20px);
+    height: rem(20px);
+    margin-left: rem(20px);
 }
 .twitter-icon{
     fill:#595959;
-    width:17px;
-    height: 20px;
-    margin-left: 20px;
+    width:rem(17px);
+    height: rem(20px);
+    margin-left: rem(20px);
 }
 .vk-icon:hover{
     fill:#fff;   
