@@ -6,6 +6,15 @@
    align-items: center;
    justify-content: center;  
 }
+.container__center{
+    justify-content: center;
+    @include tablets {
+        max-width: 768px;
+        }  
+        @include phones {
+            max-width: 480px;
+            } 
+}
 .best__container{
     /* padding-top: 100px; */
   
@@ -20,7 +29,7 @@
 }
 .best__list{
     display:flex;
-    width:920px;
+    
     justify-content:space-between;
     @include phones {
     flex-direction: column;
@@ -44,9 +53,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // @include phones {
-    //    text-align: center;
-    //     }  
+    @include phones{
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
 }
 .best__title{
     color:#2f3234;
@@ -62,5 +74,8 @@
     line-height: rem(24px);
     text-align: center;
     max-width: rem(450px);
+    @include phones{
+        text-align: left;
+    }
     
 }

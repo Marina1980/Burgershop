@@ -3,55 +3,58 @@
     position: relative;    
     background: url("../img4/bg.jpg"); 
    }
-
 .team__background {
-    padding-top:rem(80px);
+    padding-top:80px;
 width: 50%;
 height: 100%;
 position: absolute;
 top: 0;
 right: 0;     
 background-color: rgba(44,47,49, 0.9);
+padding-left: 60px;
+box-sizing: border-box;
 @include tablets {
-
-    left: 0;
-   
+    left: 0;   
     width: 100%;
     text-align: center;
-}  
+}
+}
+.title{
+    font-family: "Gagalin";
+    color: #f9b43b;
+font-size:  rem(62px);
+font-weight: 400;
+line-height:  rem(42.5px); 
+// margin-bottom: rem(20px);
 }
 
 .team__block{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
-justify-content: center;
+justify-content: space-between;
 @include tablets {
     align-items: center;
-} 
 }
-.title_margin{
-    margin-left: rem(100px);
-    @include tablets {
-        margin-left: 0;
-       }    
 }
+// .title_margin{
+//     margin-left: rem(100px);    
+// }
 .team__list{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    padding-left: rem(100px);
     @include tablets {
         align-items: center;
       
     }
+    // padding-left: rem(100px);
 }
 .team__item{
     color:  #ffffff;
     font-family:'Gagalin';
     font-size: rem(14px);
-    margin-top: rem(30px);
-    margin-left: rem(15px);
+    margin-bottom: rem(40px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,6 +67,7 @@ justify-content: center;
     display: flex;
     justify-content: flex-start;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .team__link::before {
@@ -72,8 +76,8 @@ justify-content: center;
     border:rem(6px) solid transparent;
     border-bottom: rem(6px) solid  #f9b43b;
     position: absolute;
-    left: -rem(23px);
-    top: -rem(1px); 
+    left: rem(-23px);
+    top: rem(-1px); 
 }
 // .team__img{
 //     width: 100px;
@@ -82,7 +86,7 @@ justify-content: center;
 //     overflow:hidden;
 // }
 .team__photo{
-    margin-top: rem(20px);
+    // margin-top: rem(20px);
     background: url('../img4/photo.jpg') center;
     width: rem(90px);
     height: rem(90px);
@@ -93,9 +97,9 @@ justify-content: center;
 .team__manager{
     display: flex;
     @include tablets {
-       flex-direction: column;
-       align-items: center;
-    }
+        flex-direction: column;
+        align-items: center;
+     }
 }
 .team__manager_content{
     display: flex;
@@ -109,7 +113,6 @@ justify-content: center;
 .team__manager_job{
 margin-top: rem(10px);
 margin-bottom:rem(10px);
-
 }
 .team__manager_content{
     font-family: 'Ubuntu';

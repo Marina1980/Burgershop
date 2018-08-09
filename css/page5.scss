@@ -3,6 +3,9 @@
     background: url("../img5/photo-bg.jpg");
     display: flex;
     justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   &__list, &__item, &__trigger, &__content{
       height: 100%;
   }
@@ -28,7 +31,7 @@
       width: rem(80px);
       text-decoration: none;
       align-items: flex-end;
-      margin-bottom: rem(30px);
+    //   margin-bottom: rem(30px);
       padding-bottom: rem(65px);
       background-repeat: no-repeat;
       background-size: cover;
@@ -53,14 +56,20 @@
   &__content{
     padding: rem(40px);
       width: 100%;     
-      background-color: rgba(#000, .5);
+      background-color: rgba(#fff, .5);
+      box-sizing: border-box;
   }
 }
 .title_color1{
     color: #fff;
 }
-.title_padding{
-    padding: rem(112px) rem(600px);
+.title_menu{
+    position: absolute;
+    left: 13%;
+    top:15%;
+    @include phones {
+        display: none;
+       } 
 }
 // .menu__list{
 //     display: flex;

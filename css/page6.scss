@@ -31,6 +31,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    @include tablets {
+         align-items: center;
+     }
 
 }
  .reviews__item:hover .reviews__hover{
@@ -53,6 +56,9 @@
     line-height: rem(20px);
     font-size: rem(12px);
     margin-bottom: rem(5px);
+    @include tablets{
+        text-align: center;
+    }
     @include phones{
         display: none;
     }
@@ -61,5 +67,15 @@
 .button_black{
     background-color: #141414;
     color:#ffffff; 
-    
+    @include phones{
+        display: none;
     }
+    }
+    .button2_black{
+        background-color: #141414;
+        color:#ffffff; 
+        display: none;
+        @include phones{
+            display: block;
+        }
+        }
