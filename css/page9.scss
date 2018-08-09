@@ -25,6 +25,7 @@ background-repeat: no-repeat;
 }
 .container__row{
     flex-direction: row;
+    justify-content: space-between;
 }
 .container__row{
     // width: 100%;

@@ -788,7 +788,8 @@ html, body {
   /* background-repeat: no-repeat;   */ }
 
 .container__row {
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 @media screen and (max-width: 480px) {
   .container__row {
