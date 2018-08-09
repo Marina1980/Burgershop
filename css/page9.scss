@@ -8,7 +8,8 @@ background-repeat: no-repeat;
 }
 .map{
     background: url("../img9/map.jpg");
-    background-repeat: no-repeat;     
+    background-repeat: no-repeat; 
+    position: relative;    
 }
 
 .footer{
@@ -16,6 +17,8 @@ background-repeat: no-repeat;
     /* height: 60px; */
     width:100%;
     background: url("../img9/footer.jpg");
+    left: 0;
+    bottom: 0;
     /* background-repeat: no-repeat;   */
     
 }
@@ -73,9 +76,14 @@ background-repeat: no-repeat;
   justify-content: flex-end;
   align-items: center;
 }
+.social{
+    display: flex;
+    justify-content: flex-end;
+}
 .social__list{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .vk-icon{
     fill:#595959;
