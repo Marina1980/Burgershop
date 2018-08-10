@@ -112,10 +112,10 @@
     justify-content: space-between;
     margin-bottom: rem(10px);
 }
-.form__content-photo{
-    // display:flex;
-    // flex-direction:column;
-}
+// .form__content-photo{
+//     // display:flex;
+//     // flex-direction:column;
+// }
 
 
 .form__input-fake{
@@ -166,23 +166,12 @@
 .form__label-name{
     margin-left: rem(5px);
 }
-// .squared__button:before{
-//     content:"";
-//      display:block; 
-//     width: 0px;
-//     height: 0px;
-//     background-color: #fff;
-//     width: 15px;
-//     height: 15px;
-//     margin-right: 10px;
-// }
-// .squared__button{
-//     display: flex;
-//     align-items: center;
-//     margin-left:10px;
-//    color:#e45028;}
+
 
 .form__content-checkbox{
+display: flex;
+justify-content: space-between;
+
     margin-bottom: rem(10px);
     // margin-left: 10px;
 }
@@ -209,6 +198,8 @@
 }
 .form__input-checkbox:checked+ .form__input-fake-checkbox::before{
     background: url("../img9/marker.png");
+    width: rem(5px);
+    height: rem(5px);
 }
 
 .form__label-checkbox{
@@ -217,6 +208,8 @@
     // margin-left: rem(10px);
     align-items: center;
     position:relative;
+    
+    margin-right: rem(10px);
     
 }
 .form__input-checkbox{

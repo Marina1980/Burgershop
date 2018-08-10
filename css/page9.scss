@@ -26,22 +26,17 @@ position: relative;
 }
 .container__row{
     width: 100%;
-    height: rem(60px);
-    padding: rem(10px) rem(80px);
-    display: flex;
+    // height: rem(60px);
+    // padding: rem(10px) rem(80px);
+    // display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.container__row{
-    // width: 100%;
-   
-    // display: flex;
-    // justify-content: space-between;
     @include phones{
         align-items: center;
         flex-direction: column;
     }    
 }
+
 
 .footer__left{
     width: 50%;
@@ -78,29 +73,32 @@ position: relative;
     align-items: center;
     justify-content: flex-end;
 }
+.social__item{
+    margin-left:rem(20px);
+}
 .vk-icon{
     fill:#595959;
     width:rem(25px);
     height: rem(15px);
-    margin-left:rem(20px);
+   
 }
 .fb-icon{
     fill:#595959;
     width:rem(20px);
     height: rem(20px);
-    margin-left: rem(20px);
+    // margin-left: rem(20px);
 }
 .inst-icon{
     fill:#595959;
     width:rem(20px);
     height: rem(20px);
-    margin-left: rem(20px);
+    // margin-left: rem(20px);
 }
 .twitter-icon{
     fill:#595959;
     width:rem(17px);
     height: rem(20px);
-    margin-left: rem(20px);
+    // margin-left: rem(20px);
 }
 .vk-icon:hover{
     fill:#fff;   
