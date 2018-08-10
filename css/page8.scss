@@ -197,9 +197,12 @@ justify-content: space-between;
     
 }
 .form__input-checkbox:checked+ .form__input-fake-checkbox::before{
+   
     background: url("../img9/marker.png");
-    width: rem(5px);
-    height: rem(5px);
+    margin-top: 3px;
+    width: rem(15px);
+    height: rem(15px);
+    background-repeat: no-repeat;
 }
 
 .form__label-checkbox{
@@ -208,7 +211,7 @@ justify-content: space-between;
     // margin-left: rem(10px);
     align-items: center;
     position:relative;
-    
+
     margin-right: rem(10px);
     
 }
