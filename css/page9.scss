@@ -31,6 +31,7 @@ position: relative;
     // display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     @include phones{
         align-items: center;
         flex-direction: column;
@@ -44,9 +45,12 @@ position: relative;
 
 .footer__contact{
     display: flex;
-    color:#e45028; 
+    color:#fff; 
     margin-bottom:5px;
-    flex-wrap: nowrap;
+    
+    @include phones{
+        flex-wrap: nowrap;
+    }   
 }
 
 
