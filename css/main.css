@@ -834,6 +834,9 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .social__list {
+      justify-content: center; } }
 
 .social__item {
   margin-left: 1.25rem; }

@@ -76,6 +76,9 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @include phones{
+        justify-content: center;
+    }   
 }
 .social__item{
     margin-left:rem(20px);
