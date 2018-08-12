@@ -199,8 +199,8 @@ justify-content: space-between;
 .form__input-checkbox:checked+ .form__input-fake-checkbox::before{
    
     background: url("../img9/marker.png");
-    margin-top: 3px;
-    margin-left: 2px;
+    margin-top: (3px);
+    margin-left: (2px);
     width: rem(15px);
     height: rem(15px);
     background-repeat: no-repeat;

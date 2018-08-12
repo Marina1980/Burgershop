@@ -4,7 +4,7 @@
     background: url("../img4/bg.jpg"); 
    }
 .team__background {
-    
+    padding-top:rem(80px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,7 @@ right: 0;
 background-color: rgba(44,47,49, 0.9);
 box-sizing: border-box;
 @include tablets {
+    padding-top:0;
     left: 0;   
     width: 100%;
     text-align: center;
