@@ -815,7 +815,7 @@ html, body {
 
 .footer__contact {
   display: flex;
-  color: #fff;
+  color: #e45028;
   margin-bottom: 5px; }
   @media screen and (max-width: 480px) {
     .footer__contact {
