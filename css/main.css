@@ -819,7 +819,7 @@ html, body {
   margin-bottom: 5px; }
   @media screen and (max-width: 480px) {
     .footer__contact {
-      flex-wrap: nowrap; } }
+      justify-content: center; } }
 
 .footer_phone::before {
   content: '';
@@ -837,7 +837,8 @@ html, body {
   font-weight: 600; }
   @media screen and (max-width: 480px) {
     .footer_phone {
-      justify-content: center; } }
+      justify-content: center;
+      margin-bottom: 20px; } }
 
 .footer__right {
   width: 50%;

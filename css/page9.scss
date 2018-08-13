@@ -55,7 +55,8 @@
     margin-bottom:5px;
     
     @include phones{
-        flex-wrap: nowrap;
+        // flex-wrap: nowrap;
+        justify-content: center;
     }   
 }
 
@@ -76,6 +77,7 @@
    font-weight: 600;
    @include phones{
     justify-content:center;
+    margin-bottom: 20px;
 }  
 }
 .footer__right{
