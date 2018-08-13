@@ -36,6 +36,11 @@
      justify-content: space-between;
      @include tablets {
         flex-direction: column;
+        padding:0 40px;
+       }
+       @include phones {
+    
+        padding:0 0;
        }
      
  }

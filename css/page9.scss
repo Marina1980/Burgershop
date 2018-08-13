@@ -1,20 +1,23 @@
 
 
 .section__map{
-    height:rem(650px);
-    background-size: cover;
-background-repeat: no-repeat; 
-position: relative;  
-
+//     
+//     background-size: cover;
+// background-repeat: no-repeat; 
+// position: relative;
 }
+
 .map{
     background: url("../img9/map.jpg");
     background-repeat: no-repeat; 
-      
+    background-size: cover; 
+    position: relative;  
+
 }
 
 .footer{
     position: absolute;
+    padding: rem(10px);
     display: flex;
     /* height: 60px; */
     width:100%;
@@ -25,7 +28,7 @@ position: relative;
     
 }
 .container__row{
-    width: 100%;
+    // width: 100%;
     //  height: rem(80px);
     // padding: rem(10px) rem(80px);
     // display: flex;
@@ -41,6 +44,9 @@ position: relative;
 
 .footer__left{
     width: 50%;
+    @include phones{
+        width: 100%;
+    }
 }
 
 .footer__contact{
@@ -67,9 +73,19 @@ position: relative;
     align-items: center;
    color:#e45028;
    text-decoration: none;
+   font-weight: 600;
+   @include phones{
+    justify-content:center;
+}  
 }
 .footer__right{
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    @include phones{
+        width: 100%;
+        justify-content: center;
+    }
   
 }
 .social__list{
@@ -83,6 +99,9 @@ position: relative;
 .social__item{
     margin-left:rem(20px);
 }
+.social__item:first-child{
+    margin-left: 0;
+}
 .vk-icon{
     fill:#595959;
     width:rem(25px);
@@ -93,19 +112,19 @@ position: relative;
     fill:#595959;
     width:rem(20px);
     height: rem(20px);
-    // margin-left: rem(20px);
+   
 }
 .inst-icon{
     fill:#595959;
     width:rem(20px);
     height: rem(20px);
-    // margin-left: rem(20px);
+    
 }
 .twitter-icon{
     fill:#595959;
     width:rem(17px);
     height: rem(20px);
-    // margin-left: rem(20px);
+     
 }
 .vk-icon:hover{
     fill:#fff;   

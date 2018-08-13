@@ -39,13 +39,17 @@ background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left:  rem(100px);
     
     @include tablets {
         display:none;
     }
 }
 .intro__logotype{    
-    margin-right:  rem(100px);
+    // margin-right:  rem(100px);
+    //  @include tablets {
+    //     margin-right:  rem(0px);
+    // }
 }
 .order__menu{
     display: flex;

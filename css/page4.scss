@@ -2,9 +2,11 @@
 .section-team{
     position: relative;    
     background: url("../img4/bg.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
    }
 .team__background {
-    padding-top:rem(80px);
+    // padding-top:rem(80px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +14,7 @@
     height: 100%;
 
 width: 50%;
-height: 0;
+
 position: absolute;
 top: 0;
 right: 0;     
@@ -109,7 +111,7 @@ justify-content: space-between;
         align-items: center;
      }
 }
-.team__manager_content{
+.team__manager-content{
     display: flex;
     flex-direction: column;
     // justify-content: flex-start;
@@ -118,17 +120,17 @@ justify-content: space-between;
     align-items: center;
 }
 }
-.team__manager_job{
-margin-top: rem(10px);
+.team__manager-job{
+// margin-top: rem(10px);
 margin-bottom:rem(10px);
 }
-.team__manager_content{
+.team__manager-content{
     font-family: 'Ubuntu';
     font-size: rem(12px);
     line-height: 1.6;
     margin-left: rem(10px);
 }
-.team__manager_service{
+.team__manager-service{
     
     width:rem(250px);
 }
