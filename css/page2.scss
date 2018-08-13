@@ -16,7 +16,7 @@
             } 
 }
 .best__container{
-    /* padding-top: 100px; */
+    
   
     display: flex;
    flex-direction: column;
@@ -37,7 +37,7 @@
 }
 .best__item{
     display:flex;
-    /* width:310px; */
+    
     flex-direction: column;
     align-items: center;
     flex: 1;
@@ -51,7 +51,7 @@
     min-width: rem(100px);
     display: flex;
     justify-content: center;
-    // margin-bottom: rem(40px);
+    
 }
 .best__content{
     display: flex;
@@ -60,7 +60,7 @@
     @include phones{
         align-items: flex-start;
         margin-left: 10px;
-        // margin-bottom: 10px;
+        
     }
     
 }

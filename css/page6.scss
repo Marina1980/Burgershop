@@ -46,7 +46,7 @@
     color:  #ffffff;
     font-family:'Gagalin';
     font-size: rem(14px);
-        /* position: relative;  */
+        
         margin-bottom: rem(10px); 
     }
 .reviews__text{
@@ -62,7 +62,7 @@
     @include phones{
         display: none;
     }
-    /* position: relative;     */
+   
 }
 .button_black{
     background-color: #141414;

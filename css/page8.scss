@@ -52,8 +52,7 @@
        }
 }
 .form__row{
-    // margin-left:rem(15px);
-    // margin-right: rem(50px); 
+     
     margin-bottom: rem(15px);
     display: flex;
 }
@@ -90,18 +89,16 @@
   
 }
 .form__textarea{
-//     margin-right: rem(35px);
+
  margin-bottom: rem(15px);  
-//     // height: 200px;
-//     // width: 50%;
+
 }
 .form__textarea-text{
     // margin-right: rem(40px);
     
 }
 .form__textarea-message{
-    // margin-left: rem(10px);
-    // margin-bottom: rem(10px);    
+       
     border-radius: rem(5px);
     height: rem(80px);
     width: 100%;
@@ -117,10 +114,6 @@
     justify-content: space-between;
     margin-bottom: rem(10px);
 }
-// .form__content-photo{
-//     // display:flex;
-//     // flex-direction:column;
-// }
 
 
 .form__input-fake{
@@ -131,7 +124,7 @@
     height: rem(15px);
     border-radius: 50%;
     background: #fff;
-    // border:2px solid #656464;
+    
 }
 .form__input-fake::before{
     content:"";
@@ -139,7 +132,7 @@
     width: rem(0px);
     height: rem(0px);
     border-radius: 50%;
-    /* border:2px solid #f89513; */
+    
     background-color: #f89513;
     position:absolute;
     transition: .5s;
@@ -154,15 +147,14 @@
 }
 .form__label{
     display: flex;
-    // margin: rem(10px;
-    // margin-left:rem(10px);
+    
     align-items: center;
     position:relative;
     margin-right: 10px;
 }
 .form__input-radio{
     position:absolute;
-    /* text-outline: 0; */
+   
     left: rem(-9999px);
 }
 .form__input:checked+ .form__input-fake + .form__label-name{
@@ -178,7 +170,7 @@ display: flex;
 justify-content: space-between;
 
     margin-bottom: rem(10px);
-    // margin-left: 10px;
+    
 }
 .form__input-fake-checkbox{
     display:flex;
@@ -188,14 +180,14 @@ justify-content: space-between;
     height: rem(15px);
     background: #fff;
     
-       // border:2px solid #656464;
+       
 }
 .form__input-fake-checkbox::before{
     content:"";
      display:block; 
     width: rem(0px);
     height: rem(0px);
-    /* border:2px solid #f89513; */
+    
     background-color: #f89513;
     position:absolute;
     transition: .5s;
@@ -213,8 +205,7 @@ justify-content: space-between;
 
 .form__label-checkbox{
     display: flex;
-    // margin: rem(10px);
-    // margin-left: rem(10px);
+   
     align-items: center;
     position:relative;
 
@@ -223,7 +214,7 @@ justify-content: space-between;
 }
 .form__input-checkbox{
     position:absolute;
-    /* text-outline: 0; */
+    
     left: rem(-9999px);
 }
 .form__input-checkbox:checked+ .form__input-fake-checkbox + .form__label-name-checkbox{
