@@ -2,22 +2,24 @@
     background: url('../img9/layer.jpg') center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center; 
-    flex-direction: column;   
+    // display: flex;
+    // justify-content: center; 
+    // flex-direction: column;   
 }
 .container__center{
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
+
 }
-.order__title{
-    display: flex;
-    justify-content: center;
-    margin-bottom: rem(30px);
-    @include phones {
-        flex-wrap: wrap;
-       align-items: center;
-       }
-}
+// .order__title{
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: rem(30px);
+//     @include phones {
+//         flex-wrap: wrap;
+//        align-items: center;
+//        }
+// }
 .title__align{
     @include phones {
         text-align: center;
@@ -133,7 +135,7 @@
     height: rem(0px);
     border-radius: 50%;
     
-    background-color: #f89513;
+    background-color: #e45028;
     position:absolute;
     transition: .5s;
     

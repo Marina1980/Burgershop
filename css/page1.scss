@@ -14,7 +14,8 @@ html, body {
 .section{
 height: 100vh;
 background-size: cover;
-background-repeat: no-repeat;  
+background-repeat: no-repeat;
+position: relative;  
 }
 .button {
     padding: rem(10px) rem(15px);
@@ -38,18 +39,32 @@ background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:  rem(100px);
+    // margin-left:  rem(100px);
+    
     
     @include tablets {
-        display:none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0, .9);
+        // background-image: url("../img1/close.png");
+        // background-repeat: no-repeat;
+        z-index:1;
+        // display:none;
     }
 }
-.intro__logotype{    
-    // margin-right:  rem(100px);
-    //  @include tablets {
-    //     margin-right:  rem(0px);
-    // }
+.img__close{
+    display: none;
+    @include tablets{
+        display: block;
+        padding-left: 30px;
+    }
 }
+// .intro__logotype{   
+    
+// }
 .order__menu{
     display: flex;
 }
@@ -82,12 +97,19 @@ background-repeat: no-repeat;
     color:  #ffffff;
     font-size:  rem(13px);
     font-weight:medium; 
+@include tablets{
+    flex-direction: column;
+    align-items: center;
+}
    
 }
 
 .intro__item{
     display: flex;
-    align-items: center; 
+    align-items: center;
+    @include tablets{
+        margin-bottom: 20px;
+    } 
    
 }
 .intro__item::after{
@@ -100,10 +122,16 @@ background-repeat: no-repeat;
     background-color:  #ffffff;
     margin-right: rem(15px);
     margin-left: rem(15px);
+    @include tablets{
+        display: none;
+    }
     }
    .intro__item:last-child::after{
        display: none;
    } 
+   .intro__item:first-child::after{
+    display: none;
+} 
 
 .intro__contact{
     /* padding-top:30px;   */
@@ -142,9 +170,12 @@ background-repeat: no-repeat;
 
 .intro__steam{
     @include tablets {
-    max-width:90%;
+    max-width:60%;
+    margin-bottom:rem(20px);
     }
- 
+    @include phones {
+       margin-bottom: rem(20px);
+    }
 
 }
 
@@ -152,25 +183,32 @@ background-repeat: no-repeat;
     display:flex; 
     flex-direction:column;
     align-items: center; 
-    margin-left: rem(20px);
+    // margin-left: rem(20px);
 }
 .title{
     font-family: "Gagalin";
-    color: #f9b43b;
+   
 font-size:  rem(62px);
 font-weight: 400;
-line-height:  rem(42.5px); 
+line-height:  rem(52.5px); 
 margin-bottom: rem(20px);
 @include tablets {
     font-size:  rem(56px);
+    
 }
+@include phones {
+    font-size:  rem(46px);
+}
+}
+.title_color_orange{
+    color: #f9b43b;
 }
 .intro__desc{
     
     font-family: "lifehack"; 
     color:#ffffff;
     font-weight: 500;
-    font-size:  rem(50px);
+    font-size:  rem(46px);
     @include tablets {
        text-align: center;
     }

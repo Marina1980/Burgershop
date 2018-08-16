@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="./js/script1.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="./css/main.css" rel="stylesheet">
 </head>
@@ -18,13 +18,17 @@
                     <div class="intro__logotype"><img class="intro__logo" src="./img1/logo.png" alt="logo"></div>
                     <nav class="intro__menu">
                         <ul class="intro__list">
-                            <li class="intro__item"><a class="intro__link" href="#">О НАС</a></li>                            
+                            <li class="intro__item"><a class="intro__link" href="#">
+                                <img src="./img1/close.png" alt="" class="img__close">
+                            </a></li>
+                            <li class="intro__item"><a class="intro__link" href="#">О НАС</a></li>                             
                             <li class="intro__item"><a class="intro__link" href="#">БУРГЕРЫ</a></li>
                             <li class="intro__item"><a class="intro__link" href="#">КОМАНДА</a></li>
                             <li class="intro__item"><a class="intro__link" href="#">МЕНЮ</a></li>
                             <li class="intro__item"><a class="intro__link" href="#">ОТЗЫВЫ</a></li>
                             <li class="intro__item"><a class="intro__link" href="#">КАК МЫ РАБОТАЕМ</a></li>
                             <li class="intro__item"><a class="intro__link" href="#">КОНТАКТЫ</a></li>
+                            
                         </ul>
                     </nav> 
                     <div class="order__menu">  
@@ -43,7 +47,7 @@
                         <img class ="intro__steam" src="./img1/drops.png" alt="steam">
                     </div>
                     <div class="intro__content"> 
-                        <h1 class="title">МЫ ДЕЛАЕМ</h1>
+                        <h1 class="title title_color_orange">МЫ ДЕЛАЕМ</h1>
                         <h3 class="intro__desc">натуральные <br>бургеры</h3>
                     </div> 
                                   
@@ -54,7 +58,7 @@
             <section class="best section">
                 <div class="container container__center">
                 <div class="best__container">
-                    <h2 class="title title_color">МЫ ЛУЧШИЕ</h2>
+                    <h2 class="title title_color_black title_margin_bottom">МЫ ЛУЧШИЕ</h2>
                     <ul class="best__list">
                         <li class="best__item">
                             <div class="best__icon">
@@ -93,10 +97,92 @@
                 </div>
                 </div>
             </section>
+            <section class="section burgers">
+                <div class="burgers__container burgers__container-center">
+                    <div class="slider">
+                        <div class="slider__wrap">
+                            <ul class="slider__list">
+                                <li class="slider__item">
+                                    <div class="slide">
+                                        <div class="slide__left">
+                                            <img src="./img3/dark-burger.png" alt="burger" class="slide-img">
+                                        </div>
+                                        <div class="slide__right">
+                                            <h2 class="title title_color_white">DARK BEEF BURGER</h2>
+                                             <div class="slide__content">
+                                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum pariatur at dolores ut nesciunt odio laudantium, deserunt molestiae numquam tenetur!</p>
+                                            </div>
+                                            <div class="slide__order">
+                                                <div class="slide__price">
+                                                    <span class="slide__count">500</span>
+                                                    <span class="slide__exchange">рублей</span>
+                                                </div>
+                                                <div class="slide__btns">
+                                                    <button class="button button_orange">ЗАКАЗАТЬ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="compound">
+                                            <div class="compound__icon">                                            
+                                                <span class="compound__text">СОСТАВ</span>
+                                            </div>
+                                            <div class="slide__down">
+                                                <ul class="slide__down_list">
+                                                    <li class="slide__down_item">
+                                                        <img src="./img3/beef.png" alt="beef" class="slide__down_img">
+                                                        <div class="ingredient">Говядина</div>
+                                                        <div class="amount">300 г</div>
+                                                    </li> 
+                                                    <li class="slide__down_item">
+                                                        <img src="./img3/buns.png" alt="beef" class="img__buns">
+                                                        <div class="ingredient">Булочки</div>
+                                                        <div class="amount">100 г</div>
+                                                    </li>
+                                                    <li class="slide__down_item">
+                                                        <img src="./img3/salad.png" alt="beef" class="slide__down_img">
+                                                        <div class="ingredient">Зелень</div>
+                                                        <div class="amount">70 г</div>
+                                                    </li>
+                                                    <li class="slide__down_item">
+                                                        <img src="./img3/sauce.png" alt="beef" class="slide__down_img">
+                                                        <div class="ingredient">Соус</div>
+                                                        <div class="amount">150 г</div>
+                                                    </li>
+                                                    <li class="slide__down_item">
+                                                        <img src="./img3/cucumber.png" alt="beef" class="slide__down_img">
+                                                        <div class="ingredient">Овощи</div>
+                                                        <div class="amount">200 г</div>
+                                                    </li>
+                                                    <li class="slide__down_item">
+                                                        <img src="./img3/cheese.png" alt="beef" class="slide__down_img">
+                                                        <div class="ingredient">Сыр</div>
+                                                        <div class="amount">80 г</div>
+                                                    </li>  
+                                                </ul>
+                                            </div>
+                                        </div>   
+                                    <div class="kkal">
+                                        <div class="kkal__icon">
+                                            <!-- <img src="./img3/kkal.png" alt="img"> -->
+                                            <div class="kkal__count">1200</div>
+                                            <div class="kkal__text">ККАЛ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slider__controls">
+                            <button class="slider__control slider__control_prev"></button>
+                            <button class="slider__control slider__control_next"></button>
+                        </div>
+                    </div>
+                </div> 
+            </section>
             <section class="section section-team">
                 <div class="team__background">
                     <div class="team__block">
-                        <h2 class="title title_margin">Команда</h2>
+                        <h2 class="title title_color_orange">Команда</h2>
                         <ul class="team__list">
                             <li class="team__item">
                                 <a class ="team__link"> Дениэл Редклиф </a>
@@ -281,7 +367,7 @@
             <section class="section order">
                 <div class="container container__center">
                 <div class="order__title">
-                    <h2 class="title title__align center">ЗАКАЖИТЕ ДОСТАВКУ</h2>
+                    <h2 class="title title_color_orange title__align">ЗАКАЖИТЕ ДОСТАВКУ</h2>
                 </div>
                 <form action="" class="form">
                     <div class="form__container">
