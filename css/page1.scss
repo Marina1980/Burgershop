@@ -66,12 +66,13 @@ position: relative;
     }  
 }
 .img__close{
-    
+    display: none;
+    @include tablets {
         position: absolute;
         display: block;
         right: 0px;
         top: 0;
-    
+    }
 }
 // .intro__logotype{   
     

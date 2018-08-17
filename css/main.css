@@ -113,10 +113,13 @@ html, body {
     display: block; } }
 
 .img__close {
-  position: absolute;
-  display: block;
-  right: 0px;
-  top: 0; }
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .img__close {
+      position: absolute;
+      display: block;
+      right: 0px;
+      top: 0; } }
 
 .order__menu {
   display: flex; }
