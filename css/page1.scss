@@ -39,8 +39,7 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-left:  rem(100px);
-    
+    // margin-left:  rem(100px);    
     
     @include tablets {
         position: absolute;
@@ -48,35 +47,31 @@ position: relative;
         left: 0;
         height: 100%;
         width: 100%;
-        background: rgba(0,0,0, .9);
-        // background-image: url("../img1/close.png");
-        // background-repeat: no-repeat;
+        background: rgba(0,0,0, .9);        
         z-index:1;
          display:none;
     }
 }
 .open__menu{
+    
     @include tablets {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        background: rgba(0,0,0, .9);
-        // background-image: url("../img1/close.png");
-        // background-repeat: no-repeat;
+        background: rgba(0,0,0, .9);        
         z-index:1;
          display:block;
     }  
 }
 .img__close{
-    display: none;
-    @include tablets{
+    
         position: absolute;
         display: block;
         right: 0px;
         top: 0;
-    }
+    
 }
 // .intro__logotype{   
     

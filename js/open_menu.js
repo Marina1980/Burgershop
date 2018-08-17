@@ -1,12 +1,13 @@
-element=document.querySelector(".menu__btn");
-element2=document.querySelector(".img__close");
-element3=document.querySelector(".intro__menu");
+var btnMenu=document.querySelector(".btn-menu");
+var close=document.querySelector(".img__close");
+var introMenu=document.querySelector(".intro__menu");
 
 
-element.addEventListener('click', function(){
-   element3.classlist.add("open__menu")
+btnMenu.addEventListener('click', function(){
+   introMenu.classList.add("open__menu")
+console.log('1');
 });
 
-element2.addEventListener('click', function(){
-    element3.classlist.remove("open__menu")
+close.addEventListener('click', function(){
+    introMenu.classList.remove("open__menu")
 });
