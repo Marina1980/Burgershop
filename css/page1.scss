@@ -42,36 +42,45 @@ position: relative;
     // margin-left:  rem(100px);    
     
     @include tablets {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(0,0,0, .9);        
-        z-index:1;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // height: 100%;
+        // width: 100%;
+        // background: rgba(0,0,0, .9);        
+        // z-index:1;
          display:none;
     }
 }
 .open__menu{
     
     @include tablets {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
         background: rgba(0,0,0, .9);        
         z-index:1;
-         display:block;
+         display:flex;
     }  
+}
+.img__logo{
+    display: none;
+    @include tablets {
+        position: absolute;
+        display: block;
+        left: rem(15px);
+        top: rem(15px);
+    }
 }
 .img__close{
     display: none;
     @include tablets {
         position: absolute;
         display: block;
-        right: 0px;
-        top: 0;
+        right: rem(25px);
+        top: rem(25px);
     }
 }
 // .intro__logotype{   
@@ -120,7 +129,9 @@ position: relative;
     display: flex;
     align-items: center;
     @include tablets{
-        margin-bottom: 20px;
+        
+        flex-direction: column;
+        margin-bottom: 10px;
     } 
    
 }
@@ -135,15 +146,17 @@ position: relative;
     margin-right: rem(15px);
     margin-left: rem(15px);
     @include tablets{
-        display: none;
+        margin-top: 10px;
+        display:flex;
+        
     }
     }
    .intro__item:last-child::after{
        display: none;
    } 
-   .intro__item:first-child::after{
-    display: none;
-} 
+//    .intro__item:first-child::after{
+//     display: none;
+// } 
 
 .intro__contact{
     /* padding-top:30px;   */

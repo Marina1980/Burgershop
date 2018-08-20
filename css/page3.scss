@@ -1,7 +1,7 @@
 .burgers{
     height: 100vh;
     background:linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%  );
-}
+ }
 .burgers__container{
     width: 95%;
     max-width: rem(940px);
@@ -12,6 +12,11 @@
 .burgers__container-center{
     align-items: center;
 }
+// .container_burgers{
+// flex-direction:row;
+// max-width: rem(940px);
+// align-items:center;
+// }
 .slider{
     position: relative;
    
@@ -29,8 +34,11 @@
     cursor: pointer;
      position: absolute;
     top:50%;
-    left: 0;
-    margin-left: rem(-10px);
+    left: rem(-17px);
+    @include tablets{
+        left: 0;
+    }
+    // margin-left: rem(-10px);
 
 }
 .slider__control_next{
@@ -42,11 +50,14 @@
     cursor: pointer;
     position: absolute;
     top:50%;
-    right: 0;
-    margin-right: rem(-10px);
+    right: rem(-19px);
+    @include tablets{
+        right: 0;
+    }
+    // margin-right: rem(-10px);
 }
 .slider__item{
-    position: relative;
+    // position: relative;
 }
 .title_color_white{
     color: white;
@@ -132,6 +143,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
       
 }
 .slide__down{
@@ -143,6 +158,7 @@ height: rem(265px);
 background-color: white;
 opacity:0.9;
 display: none;
+z-index:99;
 }
 .compound:hover .slide__down{
 display:block;
@@ -194,15 +210,21 @@ padding: rem(10px);
     position: absolute; 
     top:rem(5px);
     left:rem(10px);  
-    width: rem(100px);
+    width: rem(68px);
     height:rem(100px);
     background: url("../img3/kkal.png"); 
     background-repeat: no-repeat;   
+ }
+ .compound{
+    //  display: flex;
+    //  flex-direction: column;
+    //  align-items: center;
+    //  justify-content: center;
  } 
 .compound__icon{ 
-    position: absolute; 
-    top:rem(9px);
-    left:rem(15px);  
+    
+    // top:rem(9px);
+    // left:rem(15px);  
     width: rem(50px);
     height: rem(50px);
     background: url("../img3/burger.png");
@@ -213,9 +235,8 @@ padding: rem(10px);
     font-family: "Gagalin";
     font-size: rem(15px);
     color: #fff;
-    position: absolute;
-    top: rem(50px);
-    left: 0px; 
+    // top: rem(50px);
+    // left: 0px; 
     
 }
 .kkal__count{
