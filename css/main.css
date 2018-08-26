@@ -393,7 +393,15 @@ html, body {
   align-items: center; }
 
 .slider {
-  position: relative; }
+  position: relative;
+  width: 100%; }
+
+.slider__wrap {
+  overflow: hidden; }
+
+.slider__list {
+  display: flex;
+  transition: 1s; }
 
 .slider__controls {
   width: 120%; }
@@ -426,6 +434,10 @@ html, body {
     .slider__control_next {
       right: 0; } }
 
+.slider__item {
+  flex: 1;
+  position: relative; }
+
 .title_color_white {
   color: white; }
 
@@ -446,7 +458,7 @@ html, body {
       flex: auto; } }
 
 .slide__left {
-  padding: 3.75rem 0;
+  padding: 1.875rem 0;
   max-width: 100%; }
   @media screen and (max-width: 768px) {
     .slide__left {
@@ -544,7 +556,7 @@ html, body {
 
 .kkal {
   display: flex;
-  height: 5rem;
+  height: 6.25rem;
   width: 5rem;
   border-radius: 0.25rem;
   position: absolute;
@@ -641,7 +653,8 @@ html, body {
   margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; }
+  align-items: flex-start;
+  transition: 1s; }
   @media screen and (max-width: 768px) {
     .team__item {
       align-items: center; } }
@@ -650,7 +663,8 @@ html, body {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  cursor: pointer; }
 
 .team__link::before {
   display: flex;
@@ -668,10 +682,34 @@ html, body {
   background-size: cover;
   border-radius: 50%; }
 
-.team__manager {
+.is_active {
+  color: #f9b43b;
+  font-family: 'Gagalin';
+  font-size: 0.875rem;
+  margin-bottom: 2.5rem;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  @media screen and (max-width: 768px) {
+    .is_active {
+      align-items: center; } }
+
+.is_active .team__link::before {
+  display: flex;
+  content: " ";
+  border: 0.375rem solid transparent;
+  border-top: 0.375rem solid #f9b43b;
+  position: absolute;
+  left: -1.4375rem;
+  top: -0.0625rem; }
+
+.team__wrap {
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: 1s; }
+
+.team__manager {
+  display: flex; }
   @media screen and (max-width: 768px) {
     .team__manager {
       flex-direction: column;
@@ -690,6 +728,7 @@ html, body {
 
 .team__manager-content {
   font-family: 'Ubuntu';
+  color: #ffffff;
   font-size: 0.75rem;
   line-height: 1.6;
   margin-left: 0.625rem; }
@@ -741,7 +780,7 @@ html, body {
   .menus__content {
     padding: 2.5rem;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     box-sizing: border-box; }
 
 .title_color1 {
@@ -1015,6 +1054,42 @@ html, body {
   margin-left: 1.25rem;
   text-decoration: none;
   color: #fff; }
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.popap {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  font-style: 'Ubuntu';
+  font-size: 400;
+  width: 12.5rem;
+  height: 9.375rem;
+  color: #000; }
+
+.popap__text {
+  display: flex; }
+
+.popap__button {
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.3125rem;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  background-color: #e45028;
+  color: #fff;
+  border: none;
+  cursor: pointer; }
 
 .map {
   background: url("../img9/map.jpg");

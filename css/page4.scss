@@ -64,6 +64,7 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: 1s;
     @include tablets {
         align-items: center;
     }
@@ -74,6 +75,7 @@ justify-content: space-between;
     justify-content: flex-start;
     position: relative;
     margin-bottom: 20px;
+   cursor: pointer;
 }
 
 .team__link::before {
@@ -95,10 +97,36 @@ justify-content: space-between;
     border-radius: 50%;
 
 }
+.is_active{
+    color:  #f9b43b;
+    font-family:'Gagalin';
+    font-size: rem(14px);
+    margin-bottom: rem(40px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    @include tablets {
+        align-items: center;
+    }
+}
+.is_active .team__link::before{
+    display: flex;
+    content: " ";
+    border:rem(6px) solid transparent;
+    border-top: rem(6px) solid  #f9b43b;
+    position: absolute;
+    left: rem(-23px);
+    top: rem(-1px); 
+}
+.team__wrap{
+    height:0;
+    overflow: hidden;
+    transition: 1s;
+}
 .team__manager{
     display: flex;
-    height: 0;
-    overflow: hidden;
+    
     @include tablets {
         flex-direction: column;
         align-items: center;
@@ -119,6 +147,7 @@ margin-bottom:rem(10px);
 }
 .team__manager-content{
     font-family: 'Ubuntu';
+    color:#ffffff;
     font-size: rem(12px);
     line-height: 1.6;
     margin-left: rem(10px);
