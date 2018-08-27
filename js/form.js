@@ -1,6 +1,7 @@
 const myForm = document.querySelector('#myForm');
 const sendButton = document.querySelector('#sendButton');
 var overlayButton = document.querySelector('#popap__button');
+var overlay = document.querySelector('.overlay'); 
 console.log(overlayButton);
 
 
@@ -26,7 +27,7 @@ sendButton.addEventListener('click', function(event){
            var popapText = document.querySelector('.popap__text');
            popapText.textContent = xhr.response.message; 
 
-           var overlay = document.querySelector('.overlay');           
+                     
         //    var popapButton =document.querySelector(".popap__button");           
                
             overlay.classList.add('visibly');         
