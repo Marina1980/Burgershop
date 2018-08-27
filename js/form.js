@@ -1,6 +1,7 @@
 const myForm = document.querySelector('#myForm');
 const sendButton = document.querySelector('#sendButton');
 
+
 sendButton.addEventListener('click', function(event){
     event.preventDefault();
     if (validateForm(myForm)){
@@ -21,15 +22,18 @@ sendButton.addEventListener('click', function(event){
            
            console.log(xhr.response);
            var popapText = document.querySelector('.popap__text');
-           popapText.textContent = xhr.response; 
+           popapText.textContent = xhr.response.message; 
 
            var overlay = document.querySelector('.overlay');           
-           var popapButton =document.querySelector(".popap__button");          
+        //    var popapButton =document.querySelector(".popap__button"); 
+        var overlayButton = document.querySelector('.popap__button');  
+               
             overlay.classList.add('visibly');         
-           
+          
         });
-        popapButton.addEventListener('click', function(){
-           overlay.classList.remove("visibly")
+        
+        overlayButton.addEventListener('click', function(){
+           overlay.classList.remove("visibly");
         });
     }
 });

@@ -248,7 +248,14 @@ justify-content: space-between;
     left: 0;
     display: none; 
 }
+.visibly{
+    display:flex;
+}
 .popap{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -257,16 +264,20 @@ justify-content: space-between;
     background-color:#fff; 
     font-style: 'Ubuntu';
     font-size:400;
-    width: rem(200px);
-    height: rem(150px);
+    width: rem(250px);
+    height: rem(100px);
     color: #000;
+    
   
 }
 .popap__text{
-  display: flex; 
+  display: flex;
+  margin-bottom: rem(20px); 
 }
 .popap__button {
-    padding: rem(10px) rem(15px);
+   
+    padding: rem(10px) rem(20px);
+    width: rem(65px);
     border-radius: rem(5px);
     text-decoration: none;
     font-size: rem(13px);

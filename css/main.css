@@ -1064,7 +1064,14 @@ html, body {
   left: 0;
   display: none; }
 
+.visibly {
+  display: flex; }
+
 .popap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -1073,15 +1080,17 @@ html, body {
   background-color: #fff;
   font-style: 'Ubuntu';
   font-size: 400;
-  width: 12.5rem;
-  height: 9.375rem;
+  width: 15.625rem;
+  height: 6.25rem;
   color: #000; }
 
 .popap__text {
-  display: flex; }
+  display: flex;
+  margin-bottom: 1.25rem; }
 
 .popap__button {
-  padding: 0.625rem 0.9375rem;
+  padding: 0.625rem 1.25rem;
+  width: 4.0625rem;
   border-radius: 0.3125rem;
   text-decoration: none;
   font-size: 0.8125rem;
