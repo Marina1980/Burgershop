@@ -1,5 +1,7 @@
 const myForm = document.querySelector('#myForm');
 const sendButton = document.querySelector('#sendButton');
+var overlayButton = document.querySelector('#popap__button');
+console.log(overlayButton);
 
 
 sendButton.addEventListener('click', function(event){
@@ -25,16 +27,15 @@ sendButton.addEventListener('click', function(event){
            popapText.textContent = xhr.response.message; 
 
            var overlay = document.querySelector('.overlay');           
-        //    var popapButton =document.querySelector(".popap__button"); 
-        var overlayButton = document.querySelector('.popap__button');  
+        //    var popapButton =document.querySelector(".popap__button");           
                
             overlay.classList.add('visibly');         
           
         });
         
-        overlayButton.addEventListener('click', function(){
-           overlay.classList.remove("visibly");
-        });
+        // overlayButton.addEventListener('click', function(){
+        //    overlay.classList.remove("visibly");
+        // });
     }
 });
 function validateForm(form){
@@ -58,4 +59,7 @@ function validateField(field){
         return true;  
     }
 }
+overlayButton.addEventListener('click', function(){
+    overlay.classList.remove("visibly");
+ });
 
