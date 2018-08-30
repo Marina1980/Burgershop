@@ -870,6 +870,50 @@ html, body {
     .button2_black {
       display: block; } }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.visibly {
+  display: flex; }
+
+.popap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  font-style: 'Ubuntu';
+  font-size: 400;
+  width: 15.625rem;
+  height: 6.25rem;
+  color: #000; }
+
+.popap__text {
+  display: flex;
+  margin-bottom: 1.25rem; }
+
+.popap__button {
+  padding: 0.625rem 1.25rem;
+  width: 4.0625rem;
+  border-radius: 0.3125rem;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  background-color: url("./img6/close.png");
+  border: none;
+  cursor: pointer; }
+
 .order {
   background: url("../img9/layer.jpg") center;
   background-size: cover;
